@@ -26,21 +26,101 @@
             especial e importante de mi vida, mi Karen.
         </p>
 
+<div class="musica">
+
+    <h2>Presiona para escuchar nuestra canción ❤️</h2>
+
+<div class="contenedor-corazon">
+
+    <button id="playButton" class="corazon">
+        ❤️
+    </button>
+
+    <div class="flecha">
+        ←
+    </div>
+
+</div>
+
+    <audio id="audio">
+
+        <source src="cancion.mp3" type="audio/mpeg">
+
+    </audio>
+
+<script>
+
+const boton = document.getElementById("playButton");
+const audio = document.getElementById("audio");
+
+boton.addEventListener("click", function(){
+
+    if(audio.paused){
+
+        audio.play();
+
+    }else{
+
+        audio.pause();
+
+    }
+
+});
+
+</script>
+
+<div class="hearts">
+
+<span>❤</span>
+<span>💖</span>
+<span>💕</span>
+<span>💗</span>
+<span>💘</span>
+<span>❤</span>
+<span>💖</span>
+<span>💕</span>
+
+</div>
+
     </section>
 
     <section class="galeria">
 
         <div class="foto">
-            <img src="foto1.jpg" alt="">
-        </div>
+
+<img src="foto1.jpg">
+
+<span class="brillo uno"></span>
+
+<span class="brillo dos"></span>
+
+<span class="brillo tres"></span>
+
+</div>
 
         <div class="foto">
-            <img src="foto2.jpg" alt="">
-        </div>
 
-        <div class="foto">
-            <img src="foto3.jpg" alt="">
-        </div>
+<img src="foto2.jpg">
+
+<span class="brillo uno"></span>
+
+<span class="brillo dos"></span>
+
+<span class="brillo tres"></span>
+
+</div>
+
+       <div class="foto">
+
+<img src="foto3.jpg">
+
+<span class="brillo uno"></span>
+
+<span class="brillo dos"></span>
+
+<span class="brillo tres"></span>
+
+</div>
 
     </section>
 
@@ -53,10 +133,10 @@
             cada abrazo y cada momento juntos.
 
             Espero que cuando veas esto digas, wtf que gran novio tengo se pasho se pasho.
-            Se que eres la niña mas inteligente y más valiente, y muy fuerte todos los apectos, lo dire 
-            las veces que hagan falta porque eres increible  
+            Se que eres la niña mas inteligente y más valiente, y muy fuerte en todos los apectos, lo dire 
+            las veces que hagan falta porque eres increible,  
 
-            Te amo muchísimo y deseo que todos tus sueños
+            te amo muchísimo y deseo que todos tus sueños
             se hagan realidad.
 
             Feliz cumpleaños mi amor.
@@ -64,21 +144,51 @@
 
     </section>
 
-    <footer>
+   
+
+<section class="carta">
+
+    <h2>💌 Tengo algo que decirte...</h2>
+
+    <div class="sobre" onclick="abrirCarta()">
+
+        <div class="tapa"></div>
+
+        <div class="mensaje-carta" id="mensaje">
+
+            <h3>Feliz Cumpleaños mi amor ❤️</h3>
+
+            <p>
+
+                Hoy es un día muy especial porque celebramos el día en que llegó al mundo la persona que más amo.
+
+                Gracias por todo lo que me has dado y el cariño que siento hacia ti, no es una carta de despedida es una carta
+                para que veas lo tanto que me encantas, ya despúes de darte muchas cartas porque me dijiste que te gustaban. Pero
+                espero y deseo que no sea la ultima para poder decirte lo tanto que te amo en mensajes lindos, Te amo mi princesa
+                demasiado, espero te haya gustado tu cumpleaños y que esto solo sea una forma linda de terminar el día, ya casemonos bb
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <footer>
 
         Para la mejor novia del mundo.
 
     </footer>
 
-<audio controls autoplay loop>
-    <source src="cancion.mp3" type="audio/mpeg">
-</audio>
+<script>
 
-<div class="heart">❤️</div>
-<div class="heart">💖</div>
-<div class="heart">💕</div>
-<div class="heart">💗</div>
-<div class="heart">💘</div>
+function abrirCarta(){
+
+    document.getElementById("mensaje").classList.toggle("mostrar");
+
+}
+
+</script>
 
 </body>
 
