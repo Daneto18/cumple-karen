@@ -439,3 +439,63 @@ transform:translateY(0);
     }
 
 }
+
+.video{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.video h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:65px;
+
+    color:#ff4d88;
+
+    margin-bottom:15px;
+
+}
+
+.video p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+.video-contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.video video{
+
+    width:80%;
+
+    max-width:850px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.video video:hover{
+
+    transform:scale(1.02);
+
+}
